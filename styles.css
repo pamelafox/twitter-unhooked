@@ -1,0 +1,24 @@
+/** Twitter CSS overrides **/
+
+/** SIDEBAR TRENDS **/
+.Trends, .trends {
+  display: none !important;
+}
+
+/** SIDEBAR WHO-TO-FOLLOW **/
+.wtf-module, .js-wtf-module {
+  display: none !important;
+}
+
+/** NOTIFICATIONS RED ICON **/
+.count.new-count {
+  background: transparent !important;
+  left: 17px !important;
+  top: 13px !important;
+  font-size: 10px !important;
+  font-family: monospace !important;
+}
+.count.new-count .count-inner {
+  color: #585858;
+  background: transparent !important;
+}
