@@ -22,3 +22,24 @@
   color: #585858;
   background: transparent !important;
 }
+
+/** NEW TWITTER **/
+
+/** SIDEBAR TRENDS **/
+*[aria-label="Timeline: Trending now"] {
+  display: none !important;
+}
+
+/** SIDEBAR WHO-TO-FOLLOW **/
+*[aria-label="Who to follow"] {
+  display: none !important;
+}
+
+/** NOTIFICATIONS BLUE ICONS **/
+*[data-testid=AppTabBar_DirectMessage_Link] svg + div, *[data-testid=AppTabBar_Notifications_Link] svg + div{
+  filter: saturate(0%);
+}
+
+*[data-testid=AppTabBar_DirectMessage_Link] [aria-live=polite], *[data-testid=AppTabBar_Notifications_Link] [aria-live=polite]{
+  font-size: 8px;
+}
