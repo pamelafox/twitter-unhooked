@@ -1,14 +1,15 @@
 {
   "name": "Twitter UnHooked",
-  "version": "0.6",
+  "version": "0.7",
   "description": "Hides parts of Twitter that are unneeded/addictive: trends, follower recommendations.",
-   "content_scripts": [
+  "content_scripts": [
     {
       "run_at": "document_start",
       "matches": ["https://twitter.com/*"],
       "js": ["script.js"],
-      "css": ["styles.css"]
+      "css": ["styles.css"],
+      "all_frames": true
     }
   ],
-  "manifest_version": 2
+  "manifest_version": 3
 }
